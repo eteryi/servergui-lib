@@ -33,12 +33,6 @@ public class ServerGUILib implements ModInitializer, GameStartEntrypoint{
 
 	@Override
 	public void afterGameStart() {
-//		for(Command command : Commands.commands){
-//			if(command instanceof SpawnCommand){
-//				Commands.commands.remove(command);
-//				break;
-//			}
-//		}
 		Commands.commands.add(new ServerInventoryTestCommand());
 	}
 }
